@@ -7,3 +7,16 @@ declare namespace App {
 	// interface PageData {}
 	// interface Platform {}
 }
+
+interface TREND {
+	trendIn: string,
+	trendName: string,
+	tweetsLength: string
+}
+
+// autorImage, autorName, autorNickname, tweet
+interface TWEET {
+	tweet: string,
+	autorName: string,
+	autorNickname: string
+}
