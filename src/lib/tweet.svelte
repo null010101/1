@@ -23,6 +23,7 @@
 		background-color: inherit;
 		transition-duration: 250ms;
 		height: auto;
+		display: flex;
   }
 
 	main:hover {
