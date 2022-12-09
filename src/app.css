@@ -25,6 +25,10 @@
   margin: 0px;
 }
 
+body {
+  padding: 2vmax;
+}
+
 :root {
   color-scheme: dark light;
 }

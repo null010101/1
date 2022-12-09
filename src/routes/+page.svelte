@@ -51,7 +51,7 @@
 		let newTweet: TWEET = {
 			autorName: randomString(random(13, 7)),
 			autorNickname: randomString(random(13, 7)),
-			tweet: randomString(random(200, 3))
+			tweet: randomString(random(40, 3))
 		}
 		return newTweet
 	}
@@ -59,7 +59,7 @@
 	function generateRandomTweets ()
 	{
 		let tweets: TWEET[] = []
-		let tweetsLength = random(10, random(2, 1))
+		let tweetsLength = random(5, random(2, 1))
 		let tweetsIndex = 0
 		while (tweetsIndex <= tweetsLength) {
 			let newtweet = generateRandomTweet()
@@ -91,15 +91,16 @@
 <style>
 	h1 {
 		text-align: center;
+		font-size: 4vmax;
+		margin: 1vmax;
 	}
 
 	.content-container {
-		margin-left: auto;
-		margin-right: auto;
-		width: 50vw;
-		padding: 1vmax;
+		max-width: fit-content;
 		border-style: solid;
 		border-color: gray;
 		border-width: 0.1vmax;
+		margin-left: auto;
+		margin-right: auto;
 	}
 </style>

@@ -9,16 +9,20 @@
   <div>
 		<p class="autorName">{autorName}<p/>
 		<p class="autorNickname">@{autorNickname}</p>
-		<p>{tweet}</p>
+		<p class="tweet">{tweet}</p>
 	</div>
 </main>
 
 <style>
+	p {
+		white-space: normal;
+	}
+
   main {
-    display: flex;
 		padding: 1vmax;
 		background-color: inherit;
 		transition-duration: 250ms;
+		height: auto;
   }
 
 	main:hover {
@@ -26,12 +30,17 @@
 	}
 
 	.autorName {
-		font-size: 1.3vmax;
+		font-size: 1.4vmax;
 		font-weight: bolder;
 	}
 
 	.autorNickname {
 		color: #777777;
+		font-size: 1.3vmax;
+	}
+
+	.tweet {
+		font-size: 1.4vmax;
 	}
 
 	div {
