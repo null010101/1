@@ -5,11 +5,21 @@
   let trendsArray: TREND[] = generateRandomTrends()
   let tweets: TWEET[] = generateRandomTweets()
 
+	/**
+ * Multiply Math.random() with the range, then sum by the minimum of the range, an adjuster, all inside a Math.floor()
+ * @param range The range of the random number, the maximum
+ * @param adjuster The minimum of the range
+ * @returns A random number
+ */
 	function random (range: number, adjuster = 0)
 	{
 		return Math.floor(Math.random() * range + adjuster)
 	}
 
+	/**
+	 * Returns a random string
+	 * @param stringLength The string length
+	 */
 	function randomString (stringLength: number)
 	{
 		let newString = ''
@@ -23,6 +33,9 @@
 		return newString
 	}
 
+	/**
+	 * Returns a trend with random properties
+	 */
 	function generateRandomTrend ()
 	{
 		let newTrend: TREND = {
@@ -33,6 +46,9 @@
 		return newTrend
 	}
 
+	/**
+	 * Returns an array of trends with random properties
+	 */
   function generateRandomTrends ()
   {
 		let trends: TREND[] = []
@@ -46,6 +62,9 @@
 		return trends
   }
 
+	/**
+	 * Returns a tweet with random properties
+	 */
 	function generateRandomTweet ()
 	{
 		let newTweet: TWEET = {
@@ -56,6 +75,9 @@
 		return newTweet
 	}
 
+	/**
+	 * Returns an array of tweets with random properties
+	 */
 	function generateRandomTweets ()
 	{
 		let tweets: TWEET[] = []
